@@ -1,10 +1,10 @@
 """
 Production code - This is the application code that we are testing.
-This module contains the business logic for determining if it's Friday.
+This module contains the business logic for determining if a number 
+is positive, negative, or zero.
 """
 
-
-def categorize_number(number):  
+def categorize_number(number):
     """
     Kategorizálja a számot pozitív, negatív vagy nulla kategóriába.
     
@@ -14,5 +14,10 @@ def categorize_number(number):
     Returns:
         str: "Pozitív" ha a szám > 0, "Negatív" ha < 0, "Nulla" ha = 0
     """
-
-# return "Pozitív" if number == "-3" else "Nulla"
+    number = float(number) # Biztosítjuk, hogy számként kezeljük
+    if number > 0:
+        return "Pozitív"
+    elif number < 0:
+        return "Negatív"
+    else:
+        return "Nulla"
