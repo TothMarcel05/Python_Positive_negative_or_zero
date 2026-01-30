@@ -14,7 +14,7 @@ def categorize_number(number):
     Returns:
         str: "Pozitív" ha a szám > 0, "Negatív" ha < 0, "Nulla" ha = 0
     """
-    number = float(number) # Biztosítjuk, hogy számként kezeljük
+    number = float(number) 
     if number > 0:
         return "Pozitív"
     elif number < 0:
